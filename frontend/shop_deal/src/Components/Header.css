@@ -1,0 +1,85 @@
+/* part 1 css */
+
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+.login:hover {
+  border: 2px solid white;
+}
+
+.bd-curve1 {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 19px !important;
+  position: absolute;
+}
+
+.bd-curve-2 {
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 0px;
+}
+
+.bd-curve-2:hover {
+  position: relative;
+  left: 5px;
+}
+
+#logo-container {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.logo-letter {
+  font-family: "Kablammo", cursive;
+  font-size: 3vh;
+  font-weight: bold;
+  color: white;
+  animation: letter-bounce 1s ease-in-out infinite alternate;
+}
+
+.logo-letter:nth-child(even) {
+  animation-delay: 0.5s;
+}
+
+@keyframes letter-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.nav2 {
+  display: grid !important;
+  grid-template-columns: auto auto auto auto auto auto !important;
+  column-gap: 9px;
+  font-size: 12px; /* Adjust the font size for better readability */
+}
+
+
+/* Style active items */
+.nav-item.active {
+  background-color: #e6e6e5;
+  font-weight: bold !important;
+  border: 2px solid rgb(197, 194, 194);
+  border-style: dotted;
+  border-radius: 8px;
+  padding: 1px;
+}
+
+/* Ensure consistent alignment */
+.navbar-collapse2 {
+  flex-grow: 0 !important;
+  align-items: center;
+}
+
+
+
+/* part 2 css */
+
+/* Center the navigation items */

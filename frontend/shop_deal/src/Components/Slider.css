@@ -1,0 +1,63 @@
+/* TestSlider.css */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex; /* Set the display to flex */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    display: flex; /* Set the display to flex */
+  }
+  
+  .slider_card {
+    /* Your card styling here */
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    flex: 1; /* Set each card to take equal width within the slide */
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #aaa;
+    cursor: pointer;
+  }
+  
+  .slider_active {
+    background-color: #ffffff;
+  }
+  

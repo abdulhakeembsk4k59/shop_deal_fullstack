@@ -1,0 +1,127 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff; /* Set your preferred background color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Cover Styles */
+.cover {
+  position: relative;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgb(84, 28, 28) !important;
+}
+
+.cover-content {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#logo-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.logo-letter2 {
+  padding-top: 10px;
+  font-family: "Kablammo", cursive;
+  font-size: 5vw;
+  font-weight: bold;
+  color: white;
+  animation: letter-bounce 1s ease-in-out infinite alternate;
+  text-shadow: 2px 2px 4px rgb(228, 189, 80);
+  margin-bottom: 40px;
+}
+
+.logo-letter2:nth-child(even) {
+  animation-delay: 0.5s;
+}
+
+@keyframes letter-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.slogan {
+  position: relative;
+  bottom: 1.5vw; /* Adjust as needed */
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 2vw;
+  text-shadow: 2px 2px 4px rgb(88, 0, 0);
+  margin-bottom: 30px;
+}
+
+.shop-now {
+  font-family: "Caveat", cursive !important;
+  /* border-radius: 36px; */
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  border: 4px dotted white;
+  font-weight: bolder;
+}
+
+#f-shop {
+  padding-left: 3px;
+}
+
+/* Featured Products Section Styles */
+.featured-products {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  .cover-content {
+    top: 40%;
+  }
+  .logo-letter2{
+  padding-top: 20px;
+  margin-bottom: 10px;
+
+  }
+  .slogan {
+    font-size: 3vw;
+    margin-bottom: 15px;
+  }
+
+  .shop-now{
+    font-size: 3vw !important;
+  }
+}

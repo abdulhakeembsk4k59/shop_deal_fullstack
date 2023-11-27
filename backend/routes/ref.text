@@ -1,0 +1,3 @@
+const dbSales = await SalesModel.find({
+      $and: [{ author: req.user._id }, { createdAt: { $gte: start, $lt: end } }],
+    }).populate('author', '_id firstName lastName');

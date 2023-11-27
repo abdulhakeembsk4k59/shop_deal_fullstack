@@ -1,0 +1,69 @@
+.admin-dashboard {
+  display: flex;
+}
+
+
+
+/* toogle styling */
+.main-content-container {
+  flex: 1;
+  padding: 20px;
+  margin-left: 65px;
+  /* Adjust as needed */
+}
+
+.main-content-container {
+  transition: margin-left 0.5s;
+}
+
+.main-content.shifted {
+  margin-left: 200px; /* Adjust this value based on your sidebar width */
+}
+
+
+/* @media only screen and (max-width: 960px) {
+  .main-content-chaild{
+    margin-left: 10px;
+  }
+  } */
+
+/* .main-content {
+    Your existing styles for main content
+  } */
+
+
+
+.admindbcomponent1 {
+  height: 120px;
+  background-color: rgb(21, 169, 119);
+}
+
+.admindbcomponent2 {
+  height: 120px;
+  background-color: rgb(190, 57, 27);
+}
+
+.admindbcomponent3 {
+  height: 120px;
+  background-color: rgb(21, 83, 169)
+}
+
+.admindbcomponent4 {
+  height: 120px;
+  background-color: rgb(55, 84, 75);
+}
+
+.adminProducts{
+  height: 300px;
+  border-radius: 5%;
+  background-color: rgb(219, 245, 195);
+  
+}
+
+.zoom-btn{
+  transition: transform 0.3s ease;
+}
+.zoom-btn:hover {
+  transform: scale(1.1); /* Scale the button to 1.1 times its original size on hover */
+}
+

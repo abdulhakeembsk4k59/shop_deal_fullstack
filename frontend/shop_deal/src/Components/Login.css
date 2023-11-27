@@ -1,0 +1,18 @@
+/* Add this CSS to center the login card */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+  }
+  
+  .card {
+     /* Ensure the card takes the full width of the container */
+    max-width: 40vw !important;
+
+  }
+  
+  .card-body {
+    padding: 1rem; /* Add some padding to the card body for spacing */
+  }
+  
